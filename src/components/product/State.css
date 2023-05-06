@@ -1,0 +1,4 @@
+.one-third{
+    display: flex;
+    flex-direction: column;
+}

@@ -1,0 +1,61 @@
+
+.Product-card{
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 3fr 2fr 1fr;
+    grid-template-areas: 
+                        ". image ."
+                        ". info ."
+                        "leftArrow footer rightArrow";
+}
+
+.productInfo{
+    grid-area: info;
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   background-color: antiquewhite;
+}
+.ProductType{
+    margin: 10px;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.ProductDescription{
+    margin: 0 15px;
+    color: dimgray;
+}
+.img{
+    grid-area: image;
+    display: inline-block;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-origin: border-box;
+    background-clip: border-box;
+    width: 100%;
+    height: 100%;
+}
+
+.leftSymbol{
+    display: flex;
+    justify-content: flex-start;
+    grid-area: leftArrow;
+    font-size: 50px;
+    cursor: pointer;
+}
+
+.rightSymbol{
+    display: flex;
+    justify-content: flex-end;
+    grid-area: rightArrow;
+    font-size: 50px;
+    cursor: pointer;
+}
+
+.footer{
+    grid-area: footer;
+    background-color: antiquewhite;
+}
+
